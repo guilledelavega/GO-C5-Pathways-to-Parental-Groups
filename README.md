@@ -1,12 +1,43 @@
 # Conversion tables for mapping GO TERMS C5 pathways from GSEA to Parental Groups
 
-Using the rrvgo R package, which leverages semantic similarity to cluster and reduce redundancy among Gene Ontology (GO) terms, we processed and formatted the resulting tables to link pathways to their corresponding GOBP names and GO IDs. The reduction was performed using a similarity threshold of 0.7, meaning that GO terms sharing ≥70% semantic similarity were grouped together under a representative “parent” term. This approach streamlines redundant GO terms into coherent functional blocks, facilitating the summarization and interpretation of biological processes at a higher level. The resulting conversion tables are designed so that users can easily generate their own customized plots or summaries, adapting the functional grouping to their specific analyses or visualization needs.
+Using the rrvgo R package, which leverages semantic similarity to cluster and reduce redundancy among Gene Ontology (GO) terms, we processed and formatted the resulting tables to link pathways to their corresponding GO names and GO IDs. The reduction was performed using a similarity threshold of 0.7, meaning that GO terms sharing ≥70% semantic similarity were grouped together under a representative “parent” term. This approach streamlines redundant GO terms into coherent functional blocks, facilitating the summarization and interpretation of biological processes at a higher level. The resulting conversion tables are designed so that users can easily generate their own customized plots or summaries, adapting the functional grouping to their specific analyses or visualization needs.
 
-- C5 GO BP: [Conversion_table_GOBP_Parental.xlsx](Conversion_table_GOBP_Parental.xlsx)
-- C5 GO MF: [Conversion_table_GOMF_Parental.xlsx](Conversion_table_GOMF_Parental.xlsx)
-- C5 GO CC: [Conversion_table_GOCC_Parental.xlsx](Conversion_table_GOCC_Parental.xlsx)
+- **C5 GO Biological Process (BP)** → [Download GO:BP](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOBP_Parental.xlsx)
+- **C5 GO Molecular Function (MF)** → [Download GO:MF](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOMF_Parental.xlsx)
+- **C5 GO Cellular Component (CC)** → [Download GO:CC](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOCC_Parental.xlsx)
 
 
-- **C5 GO Biological Process (BP)** → [Download XLSX](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOBP_Parental.xlsx)
-- **C5 GO Molecular Function (MF)** → [Download XLSX](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOMF_Parental.xlsx)
-- **C5 GO Cellular Component (CC)** → [Download XLSX](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOCC_Parental.xlsx)
+
+
+# 🧬 GO-C5 Pathways → Parental Groups Conversion Tables  
+
+Using the **rrvgo** R package, which leverages *semantic similarity* to cluster and reduce redundancy among **Gene Ontology (GO)** terms, we processed and formatted tables that link pathways to their corresponding GO names and IDs.  
+
+Reduction was performed using a **similarity threshold of 0.7**, meaning that GO terms sharing ≥70% semantic similarity were grouped under a representative *“parent”* term.  
+This approach streamlines redundant GO terms into coherent functional blocks, facilitating biological interpretation at a higher level.  
+
+These conversion tables allow users to easily build customized plots or summaries, adapting the functional grouping to their specific analyses or visualization needs.  
+
+---
+
+### 📊 Download Conversion Tables  
+
+| Ontology Category | Description | Download Link |
+|-------------------|--------------|----------------|
+| 🧠 **Biological Process (BP)** | Grouped functional biological processes | [⬇️ Download GO:BP](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOBP_Parental.xlsx) |
+| ⚙️ **Molecular Function (MF)** | Clustered molecular function terms | [⬇️ Download GO:MF](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOMF_Parental.xlsx) |
+| 🧫 **Cellular Component (CC)** | Consolidated cellular component categories | [⬇️ Download GO:CC](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOCC_Parental.xlsx) |
+
+---
+
+### 🧩 Reproducibility  
+All tables were generated from **MSigDB C5 gene sets** (`GO:BP`, `GO:MF`, `GO:CC`) using:  
+- [`rrvgo`](https://bioconductor.org/packages/rrvgo/) for semantic reduction  
+- [`msigdbr`](https://cran.r-project.org/package=msigdbr) for GO term retrieval  
+- [`org.Hs.eg.db`](https://bioconductor.org/packages/org.Hs.eg.db/) for ontology mapping  
+
+**Similarity method:** `Rel`  
+**Threshold:** `0.7` (medium reduction)  
+**Organism:** *Homo sapiens* 🧍‍♂️  
+
+---
