@@ -5,3 +5,8 @@ Using the rrvgo R package, which leverages semantic similarity to cluster and re
 - C5 GO BP: [Conversion_table_GOBP_Parental.xlsx](Conversion_table_GOBP_Parental.xlsx)
 - C5 GO MF: [Conversion_table_GOMF_Parental.xlsx](Conversion_table_GOMF_Parental.xlsx)
 - C5 GO CC: [Conversion_table_GOCC_Parental.xlsx](Conversion_table_GOCC_Parental.xlsx)
+
+
+- **C5 GO Biological Process (BP)** → [Download XLSX](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOBP_Parental.xlsx)
+- **C5 GO Molecular Function (MF)** → [Download XLSX](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOMF_Parental.xlsx)
+- **C5 GO Cellular Component (CC)** → [Download XLSX](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/Conversion_table_GOCC_Parental.xlsx)
