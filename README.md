@@ -11,7 +11,7 @@ These conversion tables allow users to easily build customized plots or summarie
 
 ### 🧩 Reproducibility  
 The full code used for generating the parental GO mapping tables is available here:
-[rrvgo Code](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/raw/main/rrvo_GO_parent_mapping.R)
+[rrvgo Code](https://github.com/guilledelavega/GO-C5-Pathways-to-Parental-Groups/blob/main/rrvgo_GO_parent_mapping.R)
 
 All tables were generated from **MSigDB C5 gene sets** (`GO:BP`, `GO:MF`, `GO:CC`) using:  
 - [`rrvgo`](https://bioconductor.org/packages/rrvgo/) for semantic reduction  
